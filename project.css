@@ -1,0 +1,218 @@
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Css Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4; 
+}
+
+/*Navigation bar: Logo and Image  */
+#logo{
+    margin: 6px 44px;
+}
+
+#logo img{
+    margin: 5px 11px;
+}
+
+
+/* Navigation bar: Styling sheet  */
+#navbar ul{
+    display: flex;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 676px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('food1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.76;
+}
+
+#home h1{
+    color: rgb(2, 2, 2);
+    text-align: center;
+}
+#home p{
+    color: rgb(14, 7, 7);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px;
+    border-radius: 28px;
+    background: #d7cccc;
+}
+#services .box img{
+    height: 170px;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}
+.services-container h1{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Client Section  */
+#client-section {
+position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background-image: url('food1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+#clients img{
+    height: 144px;
+}
+.client-item{
+    padding: 34px;
+
+}
+
+/* Contact section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('iphone.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    
+}
+
+
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility classes */
+.h1-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px; 
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
